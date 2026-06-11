@@ -15,6 +15,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<div class="origin-reading-progress"></div>
 
 <a class="origin-skip-link" href="#primary">
     <?php esc_html_e('Skip to content', 'origin-wp'); ?>

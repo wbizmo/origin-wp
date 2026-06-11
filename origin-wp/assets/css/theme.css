@@ -52,6 +52,16 @@ select {
     font: inherit;
 }
 
+.origin-reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    z-index: 99999;
+    background: #111827;
+}
+
 .origin-container {
     width: min(1120px, calc(100% - 40px));
     margin-inline: auto;

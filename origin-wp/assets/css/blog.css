@@ -334,3 +334,39 @@
     margin-top: 0;
     margin-bottom: 1.5em;
 }
+
+.origin-comments {
+    max-width: 740px;
+    margin: 60px auto 0;
+    padding-top: 40px;
+    border-top: 1px solid var(--origin-border);
+}
+
+.comments-title {
+    margin-bottom: 24px;
+    color: var(--origin-primary);
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment-body {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid var(--origin-border);
+    border-radius: 18px;
+    background: #fff;
+}
+
+.comment-author {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.comment-meta {
+    margin-bottom: 12px;
+    font-size: .85rem;
+    color: var(--origin-muted);
+}
