@@ -289,3 +289,23 @@ input[type="submit"]:hover {
         flex-direction: column;
     }
 }
+
+.origin-full-width-main,
+.origin-canvas-main {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+.origin-canvas-template {
+    background: #ffffff;
+}
+
+.elementor-page .origin-site-main {
+    padding: 0;
+}
+
+.elementor-page .origin-container {
+    width: 100%;
+    max-width: none;
+}
