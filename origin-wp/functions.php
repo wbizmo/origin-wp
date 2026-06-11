@@ -30,6 +30,10 @@ function origin_wp_setup() {
         'flex-height' => true,
         'flex-width'  => true,
     ]);
+    add_theme_support('woocommerce');
+    add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
     add_theme_support('html5', [
         'search-form',
         'comment-form',
