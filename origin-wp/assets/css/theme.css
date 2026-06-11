@@ -383,3 +383,59 @@ input[type="submit"]:hover {
     max-width: 520px;
     margin-inline: auto;
 }
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+.origin-search-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.origin-search-input {
+    flex: 1;
+    min-height: 52px;
+    padding: 0 18px;
+    border: 1px solid var(--origin-border);
+    border-radius: 14px;
+    background: #ffffff;
+    color: var(--origin-text);
+}
+
+.origin-search-input::placeholder {
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+.origin-search-button {
+    min-height: 52px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 14px;
+    background: var(--origin-primary);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.origin-search-button:hover {
+    background: var(--origin-primary-hover);
+}
+
+@media (max-width: 640px) {
+    .origin-search-form {
+        flex-direction: column;
+    }
+
+    .origin-search-button,
+    .origin-search-input {
+        width: 100%;
+    }
+}
