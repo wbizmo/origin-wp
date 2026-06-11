@@ -1,0 +1,96 @@
+:root {
+    --origin-admin: #0f172a;
+    --origin-admin-hover: #111827;
+    --origin-admin-border: #e5e7eb;
+    --origin-admin-bg: #f8fafc;
+}
+
+#wpadminbar {
+    background: var(--origin-admin);
+}
+
+#wpadminbar .ab-item,
+#wpadminbar a.ab-item {
+    color: #ffffff !important;
+}
+
+#wpadminbar .ab-item:hover,
+#wpadminbar a.ab-item:hover {
+    color: #ffffff !important;
+}
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+    background: var(--origin-admin);
+}
+
+#adminmenu a {
+    color: rgba(255,255,255,.85);
+}
+
+#adminmenu .wp-submenu a {
+    color: rgba(255,255,255,.75);
+}
+
+#adminmenu li.menu-top:hover,
+#adminmenu li.opensub > a.menu-top {
+    background: rgba(255,255,255,.08);
+}
+
+#adminmenu .current a.menu-top,
+#adminmenu .wp-has-current-submenu a.wp-has-current-submenu {
+    background: rgba(255,255,255,.1);
+}
+
+.postbox,
+.notice,
+.wrap .card {
+    border-radius: 14px;
+}
+
+.origin-dashboard-widget h3 {
+    margin-top: 0;
+    color: var(--origin-admin);
+}
+
+.origin-dashboard-widget ul {
+    margin: 16px 0 0;
+    padding-left: 18px;
+}
+
+.login {
+    background: #f8fafc;
+}
+
+.login h1 a {
+    width: auto;
+    height: auto;
+    background-image: none;
+    text-indent: 0;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--origin-admin);
+    letter-spacing: -0.05em;
+}
+
+.login h1 a::before {
+    content: "Origin WP";
+}
+
+.login form {
+    border-radius: 18px;
+    border: 1px solid var(--origin-admin-border);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, .08);
+}
+
+.wp-core-ui .button-primary {
+    background: var(--origin-admin);
+    border-color: var(--origin-admin);
+}
+
+.wp-core-ui .button-primary:hover {
+    background: var(--origin-admin-hover);
+    border-color: var(--origin-admin-hover);
+}
