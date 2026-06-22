@@ -489,3 +489,23 @@ input[type="submit"]:hover {
     border: 1px solid var(--origin-primary);
     color: var(--origin-primary);
 }
+
+.origin-content-sidebar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 48px;
+    align-items: start;
+}
+
+.origin-sidebar {
+    padding: 24px;
+    border: 1px solid var(--origin-border);
+    border-radius: var(--origin-radius);
+    background: var(--origin-surface);
+}
+
+@media (max-width: 900px) {
+    .origin-content-sidebar {
+        grid-template-columns: 1fr;
+    }
+}

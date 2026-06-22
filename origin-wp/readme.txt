@@ -3,7 +3,7 @@ Contributors: wbizmo
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,6 +16,10 @@ Origin WP is a lightweight Elementor-ready WordPress theme built for speed, flex
 It provides a clean foundation for modern WordPress websites, improved blog archive layouts, enhanced single post templates, a custom search form, a custom 404 page, styled comments, WooCommerce compatibility, and subtle WordPress admin branding.
 
 == Changelog ==
+
+= 1.0.5 =
+* Added sidebar template with dynamic_sidebar support for WordPress.org review compatibility.
+
 
 = 1.0.4 =
 * Added recommended WordPress.org theme review features.
