@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('ORIGIN_WP_VERSION', '1.0.0');
+define('ORIGIN_WP_VERSION', '1.0.2');
 define('ORIGIN_WP_DIR', get_template_directory());
 define('ORIGIN_WP_URI', get_template_directory_uri());
 
