@@ -439,3 +439,53 @@ input[type="submit"]:hover {
         width: 100%;
     }
 }
+.wp-caption {
+    max-width: 100%;
+}
+
+.wp-caption-text,
+.gallery-caption {
+    color: var(--origin-muted);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.sticky {
+    border-color: var(--origin-primary);
+}
+
+.bypostauthor {
+    display: block;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 1.5rem 1.5rem;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 1.5rem 1.5rem 0;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.origin-widget {
+    margin-bottom: 2rem;
+}
+
+.origin-widget-title {
+    margin: 0 0 1rem;
+    color: var(--origin-primary);
+    font-size: 1.2rem;
+}
+
+.is-style-origin-outline .wp-block-button__link {
+    background: transparent;
+    border: 1px solid var(--origin-primary);
+    color: var(--origin-primary);
+}

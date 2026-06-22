@@ -5,20 +5,6 @@
     --origin-admin-bg: #f8fafc;
 }
 
-#wpadminbar {
-    background: var(--origin-admin);
-}
-
-#wpadminbar .ab-item,
-#wpadminbar a.ab-item {
-    color: #ffffff !important;
-}
-
-#wpadminbar .ab-item:hover,
-#wpadminbar a.ab-item:hover {
-    color: #ffffff !important;
-}
-
 #adminmenu,
 #adminmenu .wp-submenu,
 #adminmenuback,
