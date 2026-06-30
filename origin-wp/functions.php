@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('ORIGIN_WP_VERSION', '1.0.5');
+define('ORIGIN_WP_VERSION', '1.0.6');
 define('ORIGIN_WP_DIR', get_template_directory());
 define('ORIGIN_WP_URI', get_template_directory_uri());
 
@@ -113,3 +113,9 @@ function origin_wp_register_block_assets() {
     }
 }
 add_action('init', 'origin_wp_register_block_assets');
+
+function origin_wp_fallback_menu() {
+    echo '<ul id="origin-primary-menu" class="menu origin-fallback-menu">';
+    echo '<li><a href="' . esc_url(home_url('/')) . '">' . esc_html__('Home', 'origin-wp') . '</a></li>';
+    echo '</ul>';
+}

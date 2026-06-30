@@ -30,14 +30,17 @@ function origin_wp_login_assets() {
 add_action('login_enqueue_scripts', 'origin_wp_login_assets');
 
 function origin_wp_admin_footer() {
-    echo 'Powered by <strong>Origin WP</strong>';
+    printf(
+        esc_html__('Powered by %s', 'origin-wp'),
+        '<strong>' . esc_html__('Origin WP', 'origin-wp') . '</strong>'
+    );
 }
 add_filter('admin_footer_text', 'origin_wp_admin_footer');
 
 function origin_wp_dashboard_widget() {
     wp_add_dashboard_widget(
         'origin_wp_dashboard_widget',
-        'Origin WP',
+        esc_html__('Origin WP', 'origin-wp'),
         'origin_wp_dashboard_widget_content'
     );
 }
@@ -46,18 +49,17 @@ add_action('wp_dashboard_setup', 'origin_wp_dashboard_widget');
 function origin_wp_dashboard_widget_content() {
     ?>
     <div class="origin-dashboard-widget">
-        <h3>Welcome to Origin WP</h3>
+        <h3><?php esc_html_e('Welcome to Origin WP', 'origin-wp'); ?></h3>
 
         <p>
-            Origin WP is active and ready for Elementor,
-            blogging, and custom site building.
+            <?php esc_html_e('Origin WP is active and ready for Elementor, blogging, and custom site building.', 'origin-wp'); ?>
         </p>
 
         <ul>
-            <li>✓ Lightweight foundation</li>
-            <li>✓ Enhanced blog layouts</li>
-            <li>✓ Elementor ready</li>
-            <li>✓ Responsive by default</li>
+            <li><?php esc_html_e('Lightweight foundation', 'origin-wp'); ?></li>
+            <li><?php esc_html_e('Enhanced blog layouts', 'origin-wp'); ?></li>
+            <li><?php esc_html_e('Elementor ready', 'origin-wp'); ?></li>
+            <li><?php esc_html_e('Responsive by default', 'origin-wp'); ?></li>
         </ul>
     </div>
     <?php
@@ -72,12 +74,3 @@ function origin_wp_login_logo_title() {
     return get_bloginfo('name');
 }
 add_filter('login_headertext', 'origin_wp_login_logo_title');
-
-function origin_wp_admin_bar_branding($wp_admin_bar) {
-    $wp_admin_bar->add_node([
-        'id'    => 'origin-wp-brand',
-        'title' => 'Origin WP',
-        'href'  => admin_url(),
-    ]);
-}
-add_action('admin_bar_menu', 'origin_wp_admin_bar_branding', 1);

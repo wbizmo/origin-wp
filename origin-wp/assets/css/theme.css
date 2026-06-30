@@ -509,3 +509,34 @@ input[type="submit"]:hover {
         grid-template-columns: 1fr;
     }
 }
+
+#primary {
+    scroll-margin-top: 96px;
+}
+
+.origin-site-title,
+.origin-page-title,
+.origin-archive-header h1,
+.origin-single-title,
+.origin-post-card-title,
+.origin-404-title {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.origin-primary-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+.origin-menu-toggle[aria-expanded="true"] {
+    background: var(--origin-surface);
+}
+
+@media (max-width: 760px) {
+    .origin-primary-nav {
+        max-height: calc(100vh - 110px);
+        overflow-y: auto;
+    }
+}

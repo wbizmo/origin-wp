@@ -7,6 +7,13 @@
             const isOpen = nav.classList.toggle('is-open');
             toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
+
+        document.addEventListener('click', function (event) {
+            if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+                nav.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
     }
 
     const progressBar = document.querySelector('.origin-reading-progress');
@@ -20,9 +27,7 @@
                 return;
             }
 
-            const progress = (scrollTop / docHeight) * 100;
-
-            progressBar.style.width = progress + '%';
+            progressBar.style.width = ((scrollTop / docHeight) * 100) + '%';
         });
     }
 })();

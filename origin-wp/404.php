@@ -14,21 +14,20 @@ get_header();
         <section class="origin-404">
 
             <span class="origin-404-label">
-                Error 404
+                <?php esc_html_e('Error 404', 'origin-wp'); ?>
             </span>
 
             <h1 class="origin-404-title">
-                Page not found
+                <?php esc_html_e('Page not found', 'origin-wp'); ?>
             </h1>
 
             <p class="origin-404-description">
-                The page you're looking for may have been moved, deleted,
-                or never existed in the first place.
+                <?php esc_html_e('The page you are looking for may have been moved, deleted, or never existed in the first place.', 'origin-wp'); ?>
             </p>
 
             <div class="origin-404-actions">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="origin-btn">
-                    Back Home
+                    <?php esc_html_e('Back Home', 'origin-wp'); ?>
                 </a>
             </div>
 

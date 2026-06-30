@@ -15,6 +15,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
 <div class="origin-reading-progress"></div>
 
 <a class="origin-skip-link" href="#primary">
@@ -34,9 +35,10 @@
         </div>
 
         <button class="origin-menu-toggle" aria-controls="origin-primary-menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="screen-reader-text"><?php esc_html_e('Toggle navigation', 'origin-wp'); ?></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
         </button>
 
         <nav class="origin-primary-nav" aria-label="<?php esc_attr_e('Primary menu', 'origin-wp'); ?>">
@@ -45,7 +47,7 @@
                 'theme_location' => 'primary',
                 'menu_id'        => 'origin-primary-menu',
                 'container'      => false,
-                'fallback_cb'    => false,
+                'fallback_cb'    => 'origin_wp_fallback_menu',
             ]);
             ?>
         </nav>
