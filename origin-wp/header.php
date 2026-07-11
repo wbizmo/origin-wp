@@ -34,7 +34,7 @@
             <?php endif; ?>
         </div>
 
-        <button class="origin-menu-toggle" aria-controls="origin-primary-menu" aria-expanded="false">
+        <button type="button" class="origin-menu-toggle" aria-controls="origin-primary-menu" aria-expanded="false">
             <span class="screen-reader-text"><?php esc_html_e('Toggle navigation', 'origin-wp'); ?></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>

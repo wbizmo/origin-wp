@@ -1,9 +1,9 @@
 === Origin WP ===
 Contributors: wbizmo
 Requires at least: 6.5
-Tested up to: 6.8
+Tested up to: 7.0.1
 Requires PHP: 8.1
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,15 @@ Origin WP is distributed under the terms of the GNU GPL.
 The screenshot image is generated artwork created by the theme author. It uses simple interface shapes and text only. No third-party photos, icons, illustrations, or external image assets are included in the screenshot.
 
 == Changelog ==
+
+= 1.0.7 =
+* Finalized desktop and mobile navigation behaviour.
+* Added submenu hover and keyboard focus support.
+* Added Escape-key, outside-click, resize, and mobile-link menu closing.
+* Corrected hamburger icon alignment.
+* Fixed footer placement on pages with limited content.
+* Updated Tested up to headers to WordPress 7.0.1.
+
 
 = 1.0.6 =
 * Replaced promotional screenshot with a simple theme preview screenshot.
