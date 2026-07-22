@@ -3,7 +3,7 @@ Contributors: wbizmo
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,11 @@ Origin WP is distributed under the terms of the GNU GPL.
 The screenshot image is generated artwork created by the theme author. It uses simple interface shapes and text only. No third-party photos, icons, illustrations, or external image assets are included in the screenshot.
 
 == Changelog ==
+
+= 1.0.9 =
+* Fixed keyboard navigation in the mobile menu: focus is now trapped inside the menu while it is open.
+* Tabbing past the last menu item now moves focus to the menu toggle/close button instead of leaving the menu.
+* Shift+Tab on the menu toggle/close button now moves focus to the last menu item instead of leaving the menu.
 
 = 1.0.8 =
 * Updated Tested up to metadata to use the recommended major WordPress version format.
